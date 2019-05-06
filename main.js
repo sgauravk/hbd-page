@@ -1,6 +1,6 @@
 let count = 1;
 
-const dashGenerator = count => new Array(count).fill(".").join('');
+const dashGenerator = count => new Array(count).fill(".").join("");
 
 const startCounting = function() {
   const _ = dashGenerator(count);
