@@ -77,17 +77,20 @@ button:active {
   font-size: 15vh;
   text-align: center;
   font-weight: bold;
-  animation: mymove 5s infinite, mysize 5s infinite;
+  /* animation: mymove 5s infinite, mysize 5s infinite; */
+  animation: mymove 4s ease-in-out alternate infinite,
+            mysize 2s ease-in-out alternate-reverse infinite;
   text-shadow: 7px 7px #ff0000;
   color: white;
+  position: fixed;
 }
 
 @keyframes mymove {
   from {
-    transform: rotate(0deg);
+    transform: rotate(-25deg);
   }
   to {
-    transform: rotate(359deg);
+    transform: rotate(25deg);
   }
 }
 

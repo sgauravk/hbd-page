@@ -5,7 +5,7 @@ const dashGenerator = count => new Array(count).fill(".").join("");
 const startCounting = function() {
   const _ = dashGenerator(count);
   document.getElementById("waiting-text").innerText = "press it again" + _;
-  if (count++ < 10) return;
+  if (count++ < 1) return;
   displayMsg();
 };
 
